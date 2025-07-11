@@ -19,9 +19,9 @@ public class BasicCalculation {
 
 
         System.out.println("Addition " +add);
-        System.out.println(sub);
-        System.out.println(mul);
-        System.out.println(div);
-        System.out.println(mod);
+        System.out.println("Subtraction " +sub);
+        System.out.println("Multiplication "+mul);
+        System.out.println("Division "+div);
+        System.out.println("Modulo "+mod);
     }
 }
