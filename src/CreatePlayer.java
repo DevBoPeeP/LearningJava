@@ -1,3 +1,4 @@
+import javax.management.ListenerNotFoundException;
 import java.util.*;
 
 public class CreatePlayer {
@@ -34,7 +35,7 @@ public class CreatePlayer {
         }
     }
 
-    public Map<String, Integer> createPlayers() {
+    public List<Player> createPlayers() {
         System.out.print("Enter number of players: ");
         int numberOfPlayers = scanner.nextInt();
         scanner.nextLine(); // consume newline
@@ -45,9 +46,8 @@ public class CreatePlayer {
             numberOfPlayers = scanner.nextInt();
             scanner.nextLine();
         }
-
-       // List<Player> players = new ArrayList<>();
-        Map<String, Integer> players= new HashMap<>();
+        List<Player> players = new ArrayList<>();
+       // Map<String, Integer> players= new HashMap<>();
         System.out.println("\nCreating " + numberOfPlayers + " players:");
         for (int i = 1; i <= numberOfPlayers; i++) {
             Player player = createPlayer(i);
