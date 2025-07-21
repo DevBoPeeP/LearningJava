@@ -5,8 +5,8 @@ public class RollDie {
         return (int) (Math.random() * SIDES) + 1;
     }
     public int rollDie() {
-        int rollResult = roll();
-        return rollResult;
+       // int rollResult = roll();
+        return roll();
     }
 
 
